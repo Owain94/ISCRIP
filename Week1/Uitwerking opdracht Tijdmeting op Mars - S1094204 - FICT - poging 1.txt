@@ -1,0 +1,78 @@
+Uitwerking opdracht
+
+Opdracht:		Tijdmeting op Mars
+Weeknummer:		1
+Studentnummer:	S1094204
+Naam student:	Owain van Brakel
+Specialisatie:	FICT
+Pogingnummer:	1
+
+1. Vraagstelling
+Het script moet een aantal sol (zonnetijd op mars) om zetten naar aardse tijd
+
+2. Specificatie
+
+Invoer:
+het aantal sol (int)
+
+Uitvoer:
+{aantal_sol} sol = {aantal_dagen} dagen, {aantal_uren} uren, {aantal_minuten} minuten en {aantal_seconden} seconden
+
+Verband tussen in- en uitvoer:
+De invoer wordt verwekt en aan de hand daarvan wordt de output gegenereerd
+
+Beperkingen:
+Minder dan 0 sol gaat niet goed
+
+Voorbeelden:
+	Invoer:
+	1877
+	
+	Uitvoer:
+	1877 sol = 1928 dagen, 14 uren, 25 minuten en 32 seconden
+
+3. Ontwerp
+Een functie die de invoer uitleest en het totaalbedrag uitrekent en het totaal aantal munten teruggeeft in een tuple
+
+4. Pseudocode
+	def milliseconds(sol: int) -> int:
+	    sol_milliseconds = int((3600000 * 24) + (60000 * 39) + (1000 * 35) + 244)  # Één sol in ms
+
+	    return sol_milliseconds * sol
+
+	def human_readable(miliseconds_sol: int) -> tuple:
+	    x = miliseconds_sol / 1000
+	    seconds = x % 60
+	    x /= 60
+	    minutes = x % 60
+	    x /= 60
+	    hours = x % 24
+	    x /= 24
+	    days = x
+
+	    return floor(days), floor(hours), floor(minutes), floor(seconds)
+    
+5. Code
+	def milliseconds(sol: int) -> int:
+	    sol_milliseconds = int((3600000 * 24) + (60000 * 39) + (1000 * 35) + 244)  # Één sol in ms
+
+	    return sol_milliseconds * sol
+
+	def human_readable(miliseconds_sol: int) -> tuple:
+	    x = miliseconds_sol / 1000
+	    seconds = x % 60
+	    x /= 60
+	    minutes = x % 60
+	    x /= 60
+	    hours = x % 24
+	    x /= 24
+	    days = x
+
+	    return floor(days), floor(hours), floor(minutes), floor(seconds)
+    
+6. Test
+	Invoer:
+	1877
+	
+	Uitvoer:
+	1877 sol = 1928 dagen, 14 uren, 25 minuten en 32 seconden

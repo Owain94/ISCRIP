@@ -1,0 +1,82 @@
+Uitwerking opdracht
+
+Opdracht:		Euromunten
+Weeknummer:		1
+Studentnummer:	S1094204
+Naam student:	Owain van Brakel
+Specialisatie:	FICT
+Pogingnummer:	1
+
+1. Vraagstelling
+Het script moet het aantal munten tellen en het totaal aantal munten en het totaalbedrag teruggeven.
+
+2. Specificatie
+
+Invoer:
+8 cijfers, elk cijfer is het aantal euromunten (1, 2, 5, 10, 20, 50, 1 euro en 2 euro respectievelijk)
+
+Uitvoer:
+De uitvoer van het programma is het totaal aantal munten en het totaal bedrag in euro's
+
+Verband tussen in- en uitvoer:
+De invoer wordt verwekt en aan de hand daarvan wordt de output gegenereerd
+
+Beperkingen:
+Als iemand een 5 euro munt heeft heb je pech
+
+Voorbeelden:
+	Invoer:
+	5
+	4
+	3
+	2
+	1
+	0
+	40
+	11
+	
+	Uitvoer:
+	66
+	62.68
+
+3. Ontwerp
+Een functie die de invoer uitleest en het totaalbedrag uitrekent en het totaal aantal munten teruggeeft in een tuple
+
+4. Pseudocode
+    return (
+    	(inp[0] * 1) +
+        (inp[1] * 2) +
+        (inp[2] * 5) +
+        (inp[3] * 10) +
+        (inp[4] * 20) +
+        (inp[5] * 50) +
+        (inp[6] * 100) +
+        (inp[7] * 200)
+    ) / 100, sum(inp)
+    
+5. Code
+    return (
+    	(inp[0] * 1) +
+        (inp[1] * 2) +
+        (inp[2] * 5) +
+        (inp[3] * 10) +
+        (inp[4] * 20) +
+        (inp[5] * 50) +
+        (inp[6] * 100) +
+        (inp[7] * 200)
+    ) / 100, sum(inp)
+    
+6. Test
+	Invoer:
+	5
+	4
+	3
+	2
+	1
+	0
+	40
+	11
+	
+	Uitvoer:
+	66
+	62.68
