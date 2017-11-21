@@ -32,10 +32,10 @@ De grote prijs van Brazilië wordt verreden over 61 ronden (306.891 km).
 ```
 
 ### **Verbanden in en uitvoer**
-De invoer wordt verwerkt en aan de hand daarvan wordt de output gegenereerd
+> De invoer wordt verwerkt en aan de hand daarvan wordt de output gegenereerd
 
 ### **Beperkingen**
-De invoer is heel simpel en er zijn makkelijk fouten in te maken
+> De invoer is heel simpel en er zijn makkelijk fouten in te maken
 
 ## Voorbeelden
 #### Invoer
@@ -80,7 +80,9 @@ Gemiddelde tijd: test
 
 ## 3. Ontwerp
 > Vraag het land
+> 
 > Vraag de afstand van de ronde in km
+>
 > Vraag de gemiddelde tijd per ronde in minuten
 > 
 > Zoek uit wat eerder is -> afstand limiet of tijd limiet
